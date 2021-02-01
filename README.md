@@ -2,6 +2,7 @@
 - 基座需要导入qiankun
 
 ```javascript
+// main.js
 import { registerMicroApps, start } from 'qiankun’;
 
 // 注册微应用
@@ -60,7 +61,10 @@ const router = new VueRouter({
 });
 
 export default router;
+```
 
+```javascript
+// main.js
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
