@@ -1,6 +1,7 @@
 
-1. 基座需要导入qiankun
-        
+- 基座需要导入qiankun
+
+```javascript
 import { registerMicroApps, start } from 'qiankun’;
 
 // 注册微应用
@@ -27,8 +28,11 @@ registerMicroApps([
 start({
     prefetch: false,
 });
+```
 
-2. 微应用不需要导入qiankun
+- 微应用不需要导入qiankun
+   
+```javascript
 // router/index.js
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -95,4 +99,4 @@ export async function unmount(props) {
     console.log(props);
     instance.$destroy();
 }
-
+```
